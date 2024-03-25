@@ -8,3 +8,8 @@ $product_4 = new Product('Cat','Cat Wand Game', 3.99 , 'Toys','https://arcaplane
 
 
 $products = [$product_1,$product_2,$product_3,$product_4];
+
+*/
+
+$products_1 = new Products('croquette' , 'wand', 'small sized');
+var_dump($products_1);

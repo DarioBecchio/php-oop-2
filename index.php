@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/app/models/Products.php';
-//require_once __DIR__ . '/database/Db.php';
+require_once __DIR__ . '/database/Db.php';
 /*
 Immaginare quali sono le classi necessarie per creare uno shop online con le seguenti caratteristiche:
 L'e-commerce vende prodotti per animali.

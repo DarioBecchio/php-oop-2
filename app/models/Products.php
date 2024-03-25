@@ -40,4 +40,4 @@ class Products extends Animals
     }
 }
 
-$animals = [$cat,$dog];
+
