@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/app/models/Products.php';
-require_once __DIR__ . '/database/Db.php';
+//require_once __DIR__ . '/database/Db.php';
 /*
 Immaginare quali sono le classi necessarie per creare uno shop online con le seguenti caratteristiche:
 L'e-commerce vende prodotti per animali.
@@ -12,7 +12,7 @@ come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che 
 */
 
 ?>
-
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,21 +65,12 @@ come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che 
         <section>
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-3">
-                    <?php foreach ($products as $product) :?>   
-                        <div class="col">
-                            <div class="card">
-                                <h3><?= $product->name?></h3>
-                                <img src="<?=$product->images?>" alt="">
-                                <p> € <?= $product->price?></p>
-                                <p> Categories: <?= $product->categories?>
-                                <i class="fa-solid fa-<?= $product->typeofanimal?>"></i>
-                                </p>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
+                    
                 </div>
             </div>
         </section>
     </main>
 </body>
 </html>
+
+                    -->

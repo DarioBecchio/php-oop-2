@@ -30,4 +30,14 @@ class Animals
     }
 }
 
+class Products extends Animals 
+{
+    public function __construct(public $food, public $toys, public $kennel)
+    {
+        $this->food= $food;
+        $this->toys= $toys;
+        $this->kennel = $kennel;
+    }
+}
 
+$animals = [$cat,$dog];
