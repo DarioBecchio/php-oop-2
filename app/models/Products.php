@@ -1,12 +1,12 @@
 <?php
-class Product
+/*class Product
 {
-/*
+
 public $typeofanimal;
 public $name;
 public $price;
 public $categories;
-public $images;*/
+public $images;
 
 public function __construct(public $typeofanimal,public $name,public $price,public $categories,public $images) 
 {
@@ -18,6 +18,16 @@ $this->categories = $categories;
 $this->images = $images;
 }
 
+}*/
+
+class Animals
+
+{
+    public function __construct(public $cat, public $dog)
+    {
+        $this->cat= $cat;
+        $this->dog= $dog;
+    }
 }
 
 
