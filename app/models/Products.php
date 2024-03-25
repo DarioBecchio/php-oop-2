@@ -1,13 +1,14 @@
 <?php
 class Product
 {
+/*
 public $typeofanimal;
 public $name;
 public $price;
 public $categories;
-public $images;
+public $images;*/
 
-public function __construct($typeofanimal,$name,$price,$categories,$images)
+public function __construct(public $typeofanimal,public $name,public $price,public $categories,public $images) 
 {
     // select an object property inside a class using the $this variable
 $this->typeofanimal = $typeofanimal;
