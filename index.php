@@ -19,8 +19,16 @@ come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/2eaf4eb986.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
     <title>Oop-2-exercise</title>
+    <style> 
+    .card-body img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -70,10 +78,22 @@ come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che 
                                 <div class="card">
                                     <div class="card-body">
                                         <h3>
-                                        <?=$total_product->descriptions?>
+                                            <?=$total_product->descriptions?>
                                         </h3>
+                                        
+                                           <img src="<?=$total_product->image?>" alt="">
+                                        
                                         <p>
-                                        <?=$total_product->barcode?>
+                                            <?=$total_product->barcode?>
+                                        </p>
+                                        <p>
+                                            <?=$total_product->expiredate?>
+                                        </p>
+                                        <p>
+                                            <?=$total_product->material?>
+                                        </p>
+                                        <p>
+                                            <?=$total_product->size?>
                                         </p>
                                     </div>
                                 </div>
