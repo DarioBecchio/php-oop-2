@@ -12,7 +12,7 @@ come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che 
 */
 
 ?>
-<!--
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,7 +65,20 @@ come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che 
         <section>
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-3">
-                    
+                    <?php foreach($total_products as $total_product) :?>  
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>
+                                        <?=$total_product->descriptions?>
+                                        </h3>
+                                        <p>
+                                        <?=$total_product->barcode?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                       
+                    <?php endforeach; ?>
                 </div>
             </div>
         </section>
@@ -73,4 +86,4 @@ come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che 
 </body>
 </html>
 
-                    -->
+                    
